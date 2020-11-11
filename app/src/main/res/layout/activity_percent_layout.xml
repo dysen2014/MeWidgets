@@ -1,245 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.me.layouts.percent.PercentLinearLayout
-        android:orientation="vertical"
-        android:layout_margin="15dp"
-        app:enable_clip="true"
-        app:round_corner="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:background="#ff00ff"
-            android:layout_height="70dp">
-
-        </LinearLayout>
-        <View
-            android:background="#00ff00"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            />
-        <ProgressBar
-            android:progress="50"
-            android:max="100"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="2dp" />
-    </com.me.layouts.percent.PercentLinearLayout>
-    <com.me.layouts.percent.PercentRelativeLayout
-        android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        app:enable_clip="true"
-        app:round_as_circle="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp">
-        <ImageView
-            android:id="@+id/iv"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="#ff0"
-            />
-        <ImageView
-            android:layout_below="@+id/iv"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#f00"
-            />
-    </com.me.layouts.percent.PercentRelativeLayout>
-
-    <com.me.layouts.percent.PercentFrameLayout
-        app:enable_clip="true"
-        android:layout_margin="15dp"
-        app:round_corner_top_left="20dp"
-        app:round_corner_top_right="20dp"
-        app:round_corner_bottom_right="20dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#0f0"
-            />
-    </com.me.layouts.percent.PercentFrameLayout>
-
-    <com.me.layouts.percent.PercentFrameLayout
-        app:enable_clip="true"
-        android:layout_margin="15dp"
-        app:round_corner_top_left="20dp"
-        app:round_corner_top_right="20dp"
-        app:round_corner_bottom_right="20dp"
-        app:layout_stroke_width="5dp"
-        app:layout_stroke_color="@color/teal_200"
-        android:layout_width="100dp"
-        android:layout_height="100dp">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#0f0"
-            />
-    </com.me.layouts.percent.PercentFrameLayout>
-
-
-    <com.me.layouts.percent.PercentLinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_heightPercent="20%"
-            android:gravity="center"
-            android:background="#00ff00"
-            android:text="20%"
-            />
-        <com.me.layouts.percent.PercentLinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            app:layout_heightPercent="30%"
-            android:layout_height="0dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                app:layout_widthPercent="20%"
-                android:gravity="center"
-                android:text="20%"
-                android:background="#0000ff"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                app:layout_widthPercent="30%"
-                android:gravity="center"
-                android:text="30%"
-                android:background="#fff"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                app:layout_widthPercent="30%"
-                android:gravity="center"
-                android:text="30%"
-                android:background="#0000ff"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                app:layout_widthPercent="20%"
-                android:gravity="center"
-                android:text="20%"
-                android:background="#fff"
-                />
-        </com.me.layouts.percent.PercentLinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            app:layout_heightPercent="30%"
-            android:background="#ff00ff"
-            android:layout_height="0dp">
-            <TextView
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30%"
-                />
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="20%"
-            />
-    </com.me.layouts.percent.PercentLinearLayout>
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.me.layouts.percent.PercentRelativeLayout
-            android:layout_margin="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_selfAspectRatio="300%"
-            android:background="@color/teal_700"
-            >
-            <ImageView
-                android:id="@+id/img"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_widthPercent="20%"
-                app:layout_aspectRatio="90%"
-                android:src="@mipmap/ic_launcher"
-                />
-            <TextView
-                android:id="@+id/title"
-                android:layout_margin="15dp"
-                android:layout_toLeftOf="@+id/img"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textSize="18sp"
-                android:text="关于阿里巴巴为什么不叫阿里妈妈的研究报告"
-                />
-
-            <TextView
-                android:layout_marginLeft="15dp"
-                android:layout_below="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2018年05月01日"
-                />
-        </com.me.layouts.percent.PercentRelativeLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <com.me.layouts.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:orientation="vertical"
-            android:background="#f0f"
-            app:layout_selfAspectRatio="200%"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:gravity="center"
-                android:text="x = 20%W  x:y = 1:1"
-                android:layout_gravity="center"
-                android:layout_width="0dp"
-                app:layout_widthPercent="20%"
-                app:layout_aspectRatio="100%"
-                android:background="#fff"
-                android:layout_height="0dp" />
+            app:enable_clip="true"
+            app:round_corner="8dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#ff00ff">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#00ff00" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:max="100"
+                android:progress="50" />
         </com.me.layouts.percent.PercentLinearLayout>
 
-        <com.me.layouts.percent.PercentFrameLayout
-            android:layout_margin="15dp"
-            android:background="#0f0"
-            app:layout_selfAspectRatio="100%"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <com.me.layouts.percent.PercentRelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            app:enable_clip="true"
+            app:round_as_circle="true">
 
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ff0" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv"
+                android:background="#f00" />
+        </com.me.layouts.percent.PercentRelativeLayout>
+
+        <com.me.layouts.percent.PercentFrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            app:enable_clip="true"
+            app:round_corner_bottom_right="20dp"
+            app:round_corner_top_left="20dp"
+            app:round_corner_top_right="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0f0" />
         </com.me.layouts.percent.PercentFrameLayout>
+
+        <com.me.layouts.percent.PercentFrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            app:enable_clip="true"
+            app:layout_stroke_color="@color/teal_200"
+            app:layout_stroke_width="5dp"
+            app:round_corner_bottom_right="20dp"
+            app:round_corner_top_left="20dp"
+            app:round_corner_top_right="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0f0" />
+        </com.me.layouts.percent.PercentFrameLayout>
+
+
+        <com.me.layouts.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#00ff00"
+                android:gravity="center"
+                android:text="20%"
+                app:layout_heightPercent="20%" />
+
+            <com.me.layouts.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="30%">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#0000ff"
+                    android:gravity="center"
+                    android:text="20%"
+                    app:layout_widthPercent="20%" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="30%"
+                    app:layout_widthPercent="30%" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#0000ff"
+                    android:gravity="center"
+                    android:text="30%"
+                    app:layout_widthPercent="30%" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="20%"
+                    app:layout_widthPercent="20%" />
+            </com.me.layouts.percent.PercentLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#ff00ff"
+                app:layout_heightPercent="30%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="30%" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="20%" />
+        </com.me.layouts.percent.PercentLinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.me.layouts.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/teal_700"
+                app:layout_selfAspectRatio="300%">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_aspectRatio="90%"
+                    app:layout_widthPercent="20%" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_toLeftOf="@+id/img"
+                    android:text="关于阿里巴巴为什么不叫阿里妈妈的研究报告"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginLeft="15dp"
+                    android:text="2018年05月01日" />
+            </com.me.layouts.percent.PercentRelativeLayout>
+
+            <com.me.layouts.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#f0f"
+                android:orientation="vertical"
+                app:layout_selfAspectRatio="200%">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="x = 20%W  x:y = 1:1"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="20%" />
+
+            </com.me.layouts.percent.PercentLinearLayout>
+
+            <com.me.layouts.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#0f0"
+                app:layout_selfAspectRatio="100%">
+
+            </com.me.layouts.percent.PercentFrameLayout>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
 
 </ScrollView>
