@@ -4,30 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints">
 
-    <com.me.optionbarview.OptionBarView
-        android:id="@+id/opv"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        app:left_src="@mipmap/ic_launcher_round"
-        app:left_src_width="24dp"
-        app:left_src_height="24dp"
-        app:left_text="leftText"
-        app:title="title"
-        app:right_text="rightText"
-        />
 
-    <com.me.layouts.PercentLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:widthPercent="100%"
-        app:heightPercent="100%">
-
-    <TextView
-        per
-        android:background="@color/cardview_dark_background"/>
-    </com.me.layouts.PercentLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rcl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:itemCount="6"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

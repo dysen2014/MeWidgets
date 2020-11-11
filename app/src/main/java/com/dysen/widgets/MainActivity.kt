@@ -1,52 +1,64 @@
 package com.dysen.widgets
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
-import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.dysen.common.base.XActivity
+import com.dysen.common.base_recycler_adapter.SuperRecyclerAdapter
+import com.dysen.common.base_recycler_adapter.SuperRecyclerHolder
+import com.dysen.widgets.demo.OptionBarViewAty
+import com.dysen.widgets.demo.PercentLayoutAty
 import com.me.optionbarview.OptionBarView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : XActivity() {
 
-    private var toast: Toast? = null
+    private val menus = mutableListOf("OptionBarView", "PercentLayout")
+    private val clzzs =
+        mutableListOf<Class<*>>(OptionBarViewAty::class.java, PercentLayoutAty::class.java)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun layoutId(): Int {
+        return R.layout.activity_main
+    }
 
+    override fun initView(savedInstanceState: Bundle?) {
         initClick()
+        initAdapter()
     }
 
     private fun initClick() {
-        //区域分割 响应区域点击事件
-        opv.splitMode = true
-        opv.setOnOptionItemClickListener(object : OptionBarView.OnOptionItemClickListener {
-            override fun leftOnClick() {
-                showTip("leftText")
-            }
 
-            override fun centerOnClick() {
-                showTip("titleText")
-            }
-
-            override fun rightOnClick() {
-                showTip("rightText")
-            }
-
-        })
     }
 
-    private fun showTip(text: String, duration: Int = Toast.LENGTH_SHORT) {
-        if (toast == null)
-            toast = Toast.makeText(this, text, duration)
+    private fun initAdapter() {
+        rcl.layoutManager = LinearLayoutManager(this)
+        rcl.adapter = object : SuperRecyclerAdapter<String>(this, menus) {
+            override fun convert(
+                holder: SuperRecyclerHolder?,
+                t: String?,
+                layoutType: Int,
+                position: Int
+            ) {
+                holder?.apply {
+                    val opv: OptionBarView = holder?.getViewById(R.id.tv_item) as OptionBarView
+                    t?.let {
+                        opv.setTitleText(it)
+                    }
+                    setOnItemClickListenner {
+                        if (menus.size == clzzs.size)
+                            newInstance(this@MainActivity, clzzs[position])
+                        else
+                            showLoading("请保证菜单和页面个数对应！")
+                    }
+                }
+            }
 
-        toast?.apply {
-            setText(text)
-            setGravity(Gravity.CENTER, 0, 0)
-            show()
+            override fun getLayoutAsViewType(t: String?, position: Int): Int {
+                return R.layout.layout_common_item
+            }
+
         }
-
-
     }
+
+
 }

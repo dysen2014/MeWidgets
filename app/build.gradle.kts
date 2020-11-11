@@ -53,8 +53,12 @@ dependencies {
     implementation ("com.google.android.material:material:1.2.1")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     implementation(project(mapOf("path" to ":MeWidgets")))
-    testImplementation ("junit:junit:4.+")
+    testImplementation ("junit:junit:4.13.1")
     androidTestImplementation ("androidx.test.ext:junit:1.1.2")
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.3.0")
+    //dialog
+    implementation ("com.kongzue.dialog_v3x:dialog:3.2.3")
+    //SmartRefreshLayout
+    implementation ("com.scwang.smartrefresh:SmartRefreshLayout:1.1.2")
 
 }

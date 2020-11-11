@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo.PercentLayoutAty">
+
+    <com.me.layouts.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="50%">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:gravity="center"
+            android:text="hello sendy "
+            app:layout_heightPercent="25%" />
+
+
+    </com.me.layouts.percent.PercentLinearLayout>
+
+
+
+
+        <com.me.layouts.percent.PercentFrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:enable_clip="true"
+            app:layout_stroke_color="@color/purple_200"
+            app:layout_stroke_width="5dp"
+            app:round_as_circle="true"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp"
+                android:background="#0f0" />
+        </com.me.layouts.percent.PercentFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
