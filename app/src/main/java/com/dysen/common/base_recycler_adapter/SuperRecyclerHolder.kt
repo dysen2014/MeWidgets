@@ -11,7 +11,7 @@ import android.widget.*
 import androidx.annotation.*
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.dysen.baselib.common.base_recycler_adapter.StringUtils.obtainNoNullText
+import com.dysen.common.base_recycler_adapter.StringUtils.obtainNoNullText
 
 /**
  *

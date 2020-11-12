@@ -1,4 +1,4 @@
-package com.dysen.baselib.common.base_recycler_adapter
+package com.dysen.common.base_recycler_adapter
 
 import android.text.TextUtils
 
