@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
 
-    implementation(project(":MeWidgets"))
+    implementation(project(':Widgets'))
     //dialog
     implementation 'com.kongzue.dialog_v3x:dialog:3.2.3'
     //SmartRefreshLayout
