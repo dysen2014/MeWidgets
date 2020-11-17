@@ -19,7 +19,7 @@ import java.util.*
  * created by dysen on 2018/12/15 - 10:30 AM
  * @info    侧边的字母导航栏
  */
-class WaveSideBarView @JvmOverloads constructor(
+open class WaveSideBarView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0

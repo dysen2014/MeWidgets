@@ -23,7 +23,7 @@ import com.me.widgets.R
  * <p>
  * Info：
  */
-class OptionBarView(private val mContext: Context, attrs: AttributeSet?) : View(mContext, attrs),
+open class OptionBarView(private val mContext: Context, attrs: AttributeSet?) : View(mContext, attrs),
     Checkable {
     /**
      *文本默认字体大小
