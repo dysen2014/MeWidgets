@@ -8,14 +8,19 @@ import com.dysen.common.base_recycler_adapter.SuperRecyclerAdapter
 import com.dysen.common.base_recycler_adapter.SuperRecyclerHolder
 import com.dysen.widgets.demo.OptionBarViewAty
 import com.dysen.widgets.demo.PercentLayoutAty
+import com.dysen.widgets.demo.RulerActty
 import com.me.optionbarview.OptionBarView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : XActivity() {
 
-    private val menus = mutableListOf("OptionBarView", "PercentLayout")
+    private val menus = mutableListOf("OptionBarView", "PercentLayout", "Ruler")
     private val clzzs =
-        mutableListOf<Class<*>>(OptionBarViewAty::class.java, PercentLayoutAty::class.java)
+        mutableListOf<Class<*>>(
+            OptionBarViewAty::class.java,
+            PercentLayoutAty::class.java,
+            RulerActty::class.java
+        )
 
     override fun layoutId(): Int {
         return R.layout.activity_main

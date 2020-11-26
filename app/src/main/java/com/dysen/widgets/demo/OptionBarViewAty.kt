@@ -9,13 +9,11 @@ import kotlinx.android.synthetic.main.activity_option_bar_view.*
 class OptionBarViewAty : XActivity() {
 
 
-        override fun layoutId(): Int {
-            return R.layout.activity_option_bar_view
-        }
+    override fun layoutId(): Int = R.layout.activity_option_bar_view
 
-        override fun initView(savedInstanceState: Bundle?) {
-            initClick()
-        }
+    override fun initView(savedInstanceState: Bundle?) {
+        initClick()
+    }
 
 
     private fun initClick() {
