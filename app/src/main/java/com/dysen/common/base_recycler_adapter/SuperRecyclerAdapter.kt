@@ -16,7 +16,7 @@ import java.util.*
 abstract class SuperRecyclerAdapter<T> : RecyclerView.Adapter<SuperRecyclerHolder> {
     private var mCtx: Context? = null
     private var mValueList: MutableList<T> = ArrayList()
-    fun setDatas(items: List<T>?) {
+    open fun setDatas(items: List<T>?) {
         mValueList.clear()
         mValueList.addAll(items!!)
         notifyDataSetChanged()

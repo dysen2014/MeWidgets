@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_empty"
+    android:visibility="visible"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imvEmptyIcon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@mipmap/ic_common_empty" />
+
+    <TextView
+        android:text="@string/noData"
+        android:id="@+id/imvEmptyTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="#303030"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d5d5d5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/refresh"
+        android:visibility="gone"/>
+</LinearLayout>
